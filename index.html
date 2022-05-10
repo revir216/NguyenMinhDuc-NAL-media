@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/nal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+    	<script src="css/bootstrap.bundle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <div id="header"></div>
+    <hr>
+    <body>
+        <div id="navbar" class="row col-12">
+            <ul>
+                <li>‘オフショア開発’</li>
+                <li> ‘NALブログ’</li>
+                <li>‘ベトナム情報’</li>
+                <li>‘お問い合わせ’ </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="hostNews row">
+            <div class="hotNews col-7">
+                <img src="images/1.jpg" class="hotImage col-12">
+                <div class="title-box">
+                    <a href="">スクラムチェックリスト</a>
+                    <p>スクラムマスターになることを目指しているあなた、またはプロのスクラムマスターになるた
+                        +めの最初の一歩を踏み出しているあなたも、NALのSEのTran Duy Truongによる以下の記事
+                        +でスクラムマストターが何をすべきか、仕事の概要を説明られます。</p>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="topView col-12">
+                    <img src="images/2.jpg" class="col-12">
+                    <div class="title-box">
+                        <a href="">本とベトナム オフショア開発の課題</a>
+                        <h6>admin, October 27, 2020</h6>
+                        <p>現在ベトナムと日本は政治経済共に良好な関係を築いており、ベトナム オフショア 会社から...</p>
+                    </div>
+                </div>
+                <div class="topView col-12">
+                    <img src="images/3.jpg" class="col-12">
+                    <div class="title-box"> 
+                        <a href="">ベトナム オフショア 失敗の原因</a>
+                        <h6>admin, October 14, 2020</h6>
+                        <p>オフショア市場の魅力を求め、多くのテクノロジー企業がソフトウェアのアウトソーシングに目...</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div><hr></div>
+        <div id="newsbox" class="news-box col-12 container row">
+            <div id="latestNews" class="col-8"></div>
+            <div id="sideBar" class="popular-news col-4">
+                <div id="popularNews" class="container col-12"></div>
+                <div id="tags" class="container col-12"></div>
+                <div id="banner" class="container col-12"></div>
+            </div>
+        </div>
+        
+    </body><hr>
+    <footer class="footer row col-12">
+        <img src="images/logo-NAL.jpg" alt="logoNAL" class="footerImage col-6">
+        <div id="info" class="company-info container col-6">
+        </div>
+    </footer>
+    <script>
+        const data = {
+    "header": {
+        logotitle: "NAL MEDIA",
+        logocontent: "ベトナムオフショア開発にまつわる情報を提供します"
+    },
+    
+    "menubar": [ 
+        "オフショア開発",
+         "NALブログ",
+          "ベトナム情報",
+           "お問い合わせ" 
+    ],
+    
+    "newhost": [
+                { 
+                "id": 1,
+                "title": "スクラムチェックリスト",
+                "content": "スクラムマスターになることを目指しているあなた、またはプロのスクラムマスターになるための最初の一歩を踏み出しているあなたも、NALのSEのTran Duy Truongによる以下の記事でスクラムマストターが何をすべきか、仕事の概要を説明られます。",
+                    "category_name": "HOT NEWS",
+                    "image": 1
+                },
+                {
+                    "id": 2,
+                    "title": "日本とベトナム オフショア開発の課題",
+                    "content": "現在ベトナムと日本は政治経済共に良好な関係を築いており、ベトナム オフショア 会社から...",
+                        "date": "October 27, 2020",
+                        "author":" admin",
+                        "category_name": "TOP VIEWED",
+                    "image": 2
+                },
+                {
+                    "id": 3,
+                    "title": "ベトナム オフショア 失敗の原因",
+                    "content": "オフショア市場の魅力を求め、多くのテクノロジー企業がソフトウェアのアウトソーシングに目...",
+                        "Date": "October 14, 2020",
+                        "author": "admin",
+                        "category_name":"TOP VIEWED",
+                        "image": 3
+                }
+            ],
+            "latestnew":[
+                { 
+                "id": 4,
+                "title": "新型コロナウイルス時代におけるベトナム企業の連携",
+                "content": "Covid-19の経済全体への影響に直面し、最大手民間企業500社は売上を増加させる方法を相互に模索した。",
+                    'date': "November 18, 2020",
+                    "author": "admin",
+                    "category_name": "ベトナム情報",
+                    "image": 4
+                },
+                {
+                    "id": 5,
+                    "title": "Java言語のメリットとデメリット",
+                    "content": "Javaがもたらすメリットにより、学習して使用する人々の数は日々増加しています。 ただし、言語がどれほど強力であっても、特定の制限があり、Javaも例外ではありません。",
+                        "date": "November 17, 2020",
+                        "author": "admin",
+                        "category_name": "オフショア開発",
+                        "image": 5
+                },
+                {
+                    "id": 6,
+                    "title": "Dockerfileについて",
+                    "content": "Linux、特にDockerにアプローチしている場合は、この記事が役に立つと思います。 この記事では、NALのSE Nguyen NgocDucがDockfileの概要を説明します。",
+                        "date": "November 16, 2020",
+                        "author": "admin",
+                        "category_name": "NALブログ",
+                        "image": 6
+                },
+                { 
+                    "id": 7,
+                    "title": "ベトナムのビジネス規制改革",
+                    "content": "ベトナム政府は2020年から2025年までの事業活動に関する規定の廃止や簡素化の計画を規定した政府決議68号（68/NQ-CP）を公布した。",
+                        "date": "November 13, 2020",
+                        "author": "admin",
+                        "category_name": "ベトナム情報",
+                        "image": 7
+                },
+                {
+                    "id": 8,
+                    "title": "ベトナム・日本ICTウィーク2020",
+                    "content": "Japan ICTウィークは、今年で14年目を迎え、コロナウイルスの影響のため、オンラインの形式で11/9から11/13までの1週間、「ニューノーマル時代の日越ICT協力」というテーマで行われる。",
+                        "date": "November 11, 2020",
+                        "author": "admin",
+                        "category_name": "NALブログ",
+                        "image": 8
+                },
+                { 
+                    "id": 9,
+                    "title": "スクラムにおけるスクラムマスターの役割",
+                    "content": "スクラムマスターは、チームのパフォーマンスを向上させるためにスクラムモデルで重要な役割を果たす人物です。 スクラムマスターの役割については、次の記事で詳細を説明します。",
+                        "date": "November 10, 2020",
+                        "author": "admin",
+                        "category_name": "オフショア開発",
+                        "image": 9
+                },
+                {
+                    "id": 10,
+                    "title": "2020年度　10月までの企業活動統計データー",
+                    "content": "10月と2020年の最初の10ヶ月の企業活動",
+                        "date": "November 9, 2020",
+                        "author": "admin",
+                        "category_name": "ベトナム情報",
+                        "image": 10
+                },
+                {
+                    "id": 11,
+                    "title": "ベトナムシステム開発会社NALのエンジニア1日の業務",
+                    "content": "今回は日本の案件をメインとしたベトナムシステム開発会社のNALを事例にして、エンジニアの1日の業務を紹介させていただきます。",
+                        "date": "November 6, 2020",
+                        "author": "admin",
+                        "category_name": "NALブログ",
+                        "image": 11
+                },
+                { 
+                    "id": 12,
+                    "title": "日本顧客はベトナムオフショア会社に要求するもの",
+                    "content": "ベトナムオフショア会社と日本顧客との協力を強化するためには、製品に関連する要求事項を満たすのにベトナムエンジニアは専門知識を継続的に向上すると共に日本の仕事文化に精通する必要がある。",
+                        "date": "November 5, 2020",
+                        "author": "admin",
+                        "category_name": "オフショア開発",
+                        "image": 12
+                },
+                {
+                    "id": 13,
+                    "title": "NALが3年連続でベトナムIT会社トップに",
+                    "content":"ベトナムソフトウェアと情報技術サービス協会により、NALが「A-IoT」分野で【2020年ベトナム企業トップ10社】の一社として正式に選出された。NALは今年でベトナムIT会社トップランキングに3年連続でランクインした。",
+                        "date": "November 4, 2020",
+                        "author": "admin",
+                        "category_name": "NALブログ",
+                        "image": 13
+                }
+                      ],
+                "popularnews": [
+                        {
+                    "id": 14,
+                    "title": "ベトナム オフショア開発に関する問題解答",
+                        "category_name": "オフショア開発",
+                        "image": 14
+                },
+                {
+                    "id": 15,
+                    "title": "2020年 情報技術産業の動向",
+                        "category_name": "オフショア開発",
+                        "image": 15
+                },
+                {
+                    "id": 16,
+                    "title": "ベトナム オフショア 会社を選ぶ７つの基準",
+                        "category_name": "オフショア開発",
+                        "image": 16
+                },
+                {
+                    "id": 17,
+                    "title": "ベトナム観光への情報技術適用",
+                        "category_name": "ベトナム情報",
+                        "image": 17
+                },
+                {
+                    "id": 18,
+                    "title": "ベトナム オフショア 会社への選抜 メリットおよびデメリット",
+                        "category_name": "オフショア開発",
+                        "image": 18
+                },
+                    ],
+                "tag": [
+                    {"tag":  "ベトナム システム開発 (19 Post)"
+                },
+                {"tag": "ベトナム　オフショア (17 Post)"
+                },
+                {"tag": "ベトナムIT会社 (17 Post)"
+                },
+                {"tag": "ベトナムシステム開発 (15 Post)"
+                },
+                {"tag": "ベトナムオフショア (12 Post)"
+                }
+                ],
+                
+                "banner": [
+                {"image": "banner-1"
+                    },
+                    {"image": "banner-2"
+                },
+                {"image": "banner-3"
+                }
+                ],
+                
+                "footer": {
+                    "logo-image": "logo-NAL",
+                    "title": "NAL MEDIA ベトナムオフショア開発にまつわる情報を提供します",
+                    "content":"このサイトは、ベトナムにおけるオフショア開発の状況、ベトナムと日本の協力関係、およびテクノロジーに関する最新のニュースを更新し、NALの人々とお客様のストーリーを投稿しております。",
+                    "address": "住所: 3F, 84 Duy Tân, Cầu Giấy, Hà Nội, Việt Nam",
+                    "phone": "電話番号：(+84)243-787-8654",
+                    "email": "メールアドレス: info@nal.vn",
+                }
+                
+}
+            console.log(data);
+            var x = data.header;
+            document.getElementById("header").innerHTML += '<h1>' + data.header.logotitle + "</h1><p>" 
+                + data.header.logocontent + "</p>";
+            var latestHtml = "";
+            var latestNews = data.latestnew;
+            console.log(latestNews);
+            for (i=0;i<latestNews.length;i++){
+                latestHtml+= '<div class="latestBlock row col-12"><div class="col-5"><img src="images/'
+                    + latestNews[i].image+'.jpg" class="latestImage col-5"></div>'
+                    + '<div class="latestInfo col-7"><div class="category">'
+                    + latestNews[i].category_name + '</div>'
+                    + '<a href="">'
+                    + latestNews[i].title + '<br></a><p class="author">'
+                    + latestNews[i].date +',by ' + latestNews[i].author +'<p>'
+                    + latestNews[i].content + '</p></div></div>';
+            }
+            var popularNews = data.popularnews;
+            var popularHtml ="";
+            console.log(popularNews);
+            for (i=0;i<popularNews.length;i++){
+                popularHtml+= '<div class="popularBlock col-12"><img src="images/'
+                    + popularNews[i].image+'.jpg"><a href="">'
+                    + popularNews[i].title + '</a></div>';
+            }
+            var tags = data.tag;
+            var tagsHtml = "";
+            for (i=0;i<tags.length;i++){
+                tagsHtml += '<a class="tags row col-12">' + tags[i].tag +'</a>';
+            }
+            var banner = data.banner;
+            var bannerHtml = "";
+            for (i=0;i<banner.length;i++){
+                bannerHtml += '<img src="images/' + banner[i].image + '.jpg" class="bannerBox">';
+            }
+            var info = data.footer;
+            var infoHtml = '<h6>' + info.title +'</h6><br><p>'
+                            + info.content + '<br>' + info.address + '<br>' 
+                            + info.phone + '<br>' + info.email + '</p>';               
+            document.getElementById("latestNews").innerHTML += latestHtml;
+            document.getElementById("popularNews").innerHTML += popularHtml;
+            document.getElementById("tags").innerHTML += tagsHtml;
+            document.getElementById("banner").innerHTML += bannerHtml;
+            document.getElementById("info").innerHTML += infoHtml;
+    </script>
+</html>

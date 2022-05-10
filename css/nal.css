@@ -1,0 +1,83 @@
+		*{
+			font-family:'Noto Serif JP', serif;
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0% 10% 0% 10%;
+		}
+		#header>h1 {
+			text-align: center;
+			font-weight: 800;
+		}
+		#header>p {
+			font-size:medium;
+			color: darkgray;
+			text-align: center;
+		}
+		#navbar {
+			text-align: center;
+		}
+		li {
+			display: inline;
+			margin: 0px 10px 0px 10px;
+		}
+		.hostNews{
+			margin: 30px 0px 30px 0px;
+		}
+		.hotNews {
+			position: relative;
+		}
+		.topView {
+			position: relative;
+			margin-bottom: 10px;
+		}
+		.title-box {
+			background-color: white;
+			position: absolute;
+			bottom: 0%;
+			width: 80%;
+			height: auto;
+			left: 10%;
+		}
+		a {
+			text-decoration: none;
+			font-weight: 700;
+			font-size: medium;
+			color: black;
+			padding: 20px;
+		}
+		.title-box>h6 {
+			color: black;
+			font-size: small;
+			padding-left:20px;
+		}
+		p {
+			color: darkgray;
+			font-size: small;
+			padding:5px 20px 5px 20px;
+			text-indent: 5%;
+		}
+		.latestBlock {
+			height: 180px;
+			overflow: hidden ;
+		}
+		.latestImage {
+			height: 150px;
+			width: 200px;
+		}
+		.category {
+			font-size: small;
+			background-color: red;
+		}
+		footer {
+			height: 150px;
+		}
+		.footerImage {
+			height: 150px;
+			width: auto;
+		}
+/*--------------------------TABLET---------------------------*/
+@media only screen and (max-width: 991px) {
+
+/*--------------------------MOBILE---------------------------*/
+@media only screen and (max-width: 575px) {
